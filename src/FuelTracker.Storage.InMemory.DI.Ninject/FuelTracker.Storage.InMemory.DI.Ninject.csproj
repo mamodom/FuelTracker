@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5CED08B-C0FB-4656-8421-40F37FC1301E}</ProjectGuid>
+    <ProjectGuid>{1A1C9B0D-668B-4670-84F3-BB7CE0942B5B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FuelTracker.Specs.Steps</RootNamespace>
-    <AssemblyName>FuelTracker.Specs.Steps</AssemblyName>
+    <RootNamespace>FuelTracker.Storage.InMemory.DI.Ninject</RootNamespace>
+    <AssemblyName>FuelTracker.Storage.InMemory.DI.Ninject</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -38,32 +42,26 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="TechTalk.SpecFlow, Version=1.9.0.77, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
-      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hooks.cs" />
-    <Compile Include="StepDefinitions.cs" />
+    <Compile Include="InMemoryStorageModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FuelTracker.Core.Commands\FuelTracker.Core.Commands.csproj">
-      <Project>{101016BF-F910-4EAD-B009-420C55864FE3}</Project>
-      <Name>FuelTracker.Core.Commands</Name>
+    <ProjectReference Include="..\FuelTracker.Storage.Core.DI.Ninject\FuelTracker.Storage.Core.DI.Ninject.csproj">
+      <Project>{F8171E99-9BCC-4624-ABF9-50F138D56812}</Project>
+      <Name>FuelTracker.Storage.Core.DI.Ninject</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FuelTracker.DI.Ninject\FuelTracker.DI.Ninject.csproj">
-      <Project>{CE8EDB8C-A0C3-40D2-90F1-0C3AED4F71F3}</Project>
-      <Name>FuelTracker.DI.Ninject</Name>
+    <ProjectReference Include="..\FuelTracker.Storage.Core\FuelTracker.Storage.Core.csproj">
+      <Project>{F3C46F0A-9BD4-4C43-B6F7-707BBAFC4DC5}</Project>
+      <Name>FuelTracker.Storage.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FuelTracker.Libs\FuelTracker.Libs.csproj">
-      <Project>{289BF93E-D590-47EA-8C17-0E33CB242F0C}</Project>
-      <Name>FuelTracker.Libs</Name>
+    <ProjectReference Include="..\FuelTracker.Storage.InMemory\FuelTracker.Storage.InMemory.csproj">
+      <Project>{769D2937-A243-4A66-9A02-A2F1F2A852F3}</Project>
+      <Name>FuelTracker.Storage.InMemory</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

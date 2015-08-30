@@ -1,14 +1,28 @@
-﻿using TechTalk.SpecFlow;
+﻿using FuelTracker.Core.Commands;
+using FuelTracker.DI.Ninject;
+using FuelTracker.Libs;
+using TechTalk.SpecFlow;
+using TechTalk.SpecFlow.Assist;
 
 namespace FuelTracker.Specs.Steps
 {
     [Binding]
     public class StepDefinitions
     {
+        private readonly IResolver _resolver;
+
+        public StepDefinitions(IResolver resolver)
+        {
+            _resolver = resolver;
+        }
+
         [Given(@"I added the following fillup")]
         public void GivenIAddedTheFollowingFillup(Table table)
         {
-            ScenarioContext.Current.Pending();
+            table.CreateInstance<AddFillUpCommand>()
+                .Pipe(_resolver.GetInstance<ICommandHandler<AddFillUpCommand>>().Handle);
+
+            var instance = _resolver.GetInstance<ICommandHandler<AddFillUpCommand>>();
         }
 
         [When(@"I list my fillups")]

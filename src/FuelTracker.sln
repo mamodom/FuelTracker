@@ -7,6 +7,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Specs", "FuelTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Specs.Steps", "FuelTracker.Specs.Steps\FuelTracker.Specs.Steps.csproj", "{E5CED08B-C0FB-4656-8421-40F37FC1301E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.DI.Ninject", "FuelTracker.DI.Ninject\FuelTracker.DI.Ninject.csproj", "{CE8EDB8C-A0C3-40D2-90F1-0C3AED4F71F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Libs", "FuelTracker.Libs\FuelTracker.Libs.csproj", "{289BF93E-D590-47EA-8C17-0E33CB242F0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Commands", "FuelTracker.Core.Commands\FuelTracker.Core.Commands.csproj", "{101016BF-F910-4EAD-B009-420C55864FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Concrete", "FuelTracker.Core.Concrete\FuelTracker.Core.Concrete.csproj", "{29757A21-ACF3-4C4A-9989-99B4FEAB831A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.Core", "FuelTracker.Storage.Core\FuelTracker.Storage.Core.csproj", "{F3C46F0A-9BD4-4C43-B6F7-707BBAFC4DC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Abstract", "FuelTracker.Core.Abstract\FuelTracker.Core.Abstract.csproj", "{6DE436EB-326C-4F0F-8703-5A48170B145B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Entities", "FuelTracker.Core.Entities\FuelTracker.Core.Entities.csproj", "{70DC2F0D-C46E-4D67-B366-DE4EE1B2DF73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.InMemory", "FuelTracker.Storage.InMemory\FuelTracker.Storage.InMemory.csproj", "{769D2937-A243-4A66-9A02-A2F1F2A852F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.InMemory.DI.Ninject", "FuelTracker.Storage.InMemory.DI.Ninject\FuelTracker.Storage.InMemory.DI.Ninject.csproj", "{1A1C9B0D-668B-4670-84F3-BB7CE0942B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.Core.DI.Ninject", "FuelTracker.Storage.Core.DI.Ninject\FuelTracker.Storage.Core.DI.Ninject.csproj", "{F8171E99-9BCC-4624-ABF9-50F138D56812}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +41,46 @@ Global
 		{E5CED08B-C0FB-4656-8421-40F37FC1301E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5CED08B-C0FB-4656-8421-40F37FC1301E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5CED08B-C0FB-4656-8421-40F37FC1301E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE8EDB8C-A0C3-40D2-90F1-0C3AED4F71F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8EDB8C-A0C3-40D2-90F1-0C3AED4F71F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8EDB8C-A0C3-40D2-90F1-0C3AED4F71F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8EDB8C-A0C3-40D2-90F1-0C3AED4F71F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{289BF93E-D590-47EA-8C17-0E33CB242F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289BF93E-D590-47EA-8C17-0E33CB242F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289BF93E-D590-47EA-8C17-0E33CB242F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289BF93E-D590-47EA-8C17-0E33CB242F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101016BF-F910-4EAD-B009-420C55864FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101016BF-F910-4EAD-B009-420C55864FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101016BF-F910-4EAD-B009-420C55864FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101016BF-F910-4EAD-B009-420C55864FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29757A21-ACF3-4C4A-9989-99B4FEAB831A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29757A21-ACF3-4C4A-9989-99B4FEAB831A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29757A21-ACF3-4C4A-9989-99B4FEAB831A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29757A21-ACF3-4C4A-9989-99B4FEAB831A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3C46F0A-9BD4-4C43-B6F7-707BBAFC4DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C46F0A-9BD4-4C43-B6F7-707BBAFC4DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C46F0A-9BD4-4C43-B6F7-707BBAFC4DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C46F0A-9BD4-4C43-B6F7-707BBAFC4DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE436EB-326C-4F0F-8703-5A48170B145B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE436EB-326C-4F0F-8703-5A48170B145B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE436EB-326C-4F0F-8703-5A48170B145B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE436EB-326C-4F0F-8703-5A48170B145B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DC2F0D-C46E-4D67-B366-DE4EE1B2DF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DC2F0D-C46E-4D67-B366-DE4EE1B2DF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DC2F0D-C46E-4D67-B366-DE4EE1B2DF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DC2F0D-C46E-4D67-B366-DE4EE1B2DF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{769D2937-A243-4A66-9A02-A2F1F2A852F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769D2937-A243-4A66-9A02-A2F1F2A852F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769D2937-A243-4A66-9A02-A2F1F2A852F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769D2937-A243-4A66-9A02-A2F1F2A852F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1C9B0D-668B-4670-84F3-BB7CE0942B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1C9B0D-668B-4670-84F3-BB7CE0942B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1C9B0D-668B-4670-84F3-BB7CE0942B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1C9B0D-668B-4670-84F3-BB7CE0942B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8171E99-9BCC-4624-ABF9-50F138D56812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8171E99-9BCC-4624-ABF9-50F138D56812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8171E99-9BCC-4624-ABF9-50F138D56812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8171E99-9BCC-4624-ABF9-50F138D56812}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

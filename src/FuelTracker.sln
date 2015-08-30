@@ -3,29 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Specs", "FuelTracker.Specs\FuelTracker.Specs.csproj", "{B6CA5BF8-239D-4467-A4B7-6DA02A1698F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Specs", "Tests\FuelTracker.Specs\FuelTracker.Specs.csproj", "{B6CA5BF8-239D-4467-A4B7-6DA02A1698F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Specs.Steps", "FuelTracker.Specs.Steps\FuelTracker.Specs.Steps.csproj", "{E5CED08B-C0FB-4656-8421-40F37FC1301E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Specs.Steps", "Tests\FuelTracker.Specs.Steps\FuelTracker.Specs.Steps.csproj", "{E5CED08B-C0FB-4656-8421-40F37FC1301E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.DI.Ninject", "FuelTracker.DI.Ninject\FuelTracker.DI.Ninject.csproj", "{CE8EDB8C-A0C3-40D2-90F1-0C3AED4F71F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Libs", "FuelTracker.Libs\FuelTracker.Libs.csproj", "{289BF93E-D590-47EA-8C17-0E33CB242F0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Commands", "FuelTracker.Core.Commands\FuelTracker.Core.Commands.csproj", "{101016BF-F910-4EAD-B009-420C55864FE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Commands", "Core\FuelTracker.Core.Commands\FuelTracker.Core.Commands.csproj", "{101016BF-F910-4EAD-B009-420C55864FE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Concrete", "FuelTracker.Core.Concrete\FuelTracker.Core.Concrete.csproj", "{29757A21-ACF3-4C4A-9989-99B4FEAB831A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Concrete", "Core\FuelTracker.Core.Concrete\FuelTracker.Core.Concrete.csproj", "{29757A21-ACF3-4C4A-9989-99B4FEAB831A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.Core", "FuelTracker.Storage.Core\FuelTracker.Storage.Core.csproj", "{F3C46F0A-9BD4-4C43-B6F7-707BBAFC4DC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.Core", "Storage\FuelTracker.Storage.Core\FuelTracker.Storage.Core.csproj", "{F3C46F0A-9BD4-4C43-B6F7-707BBAFC4DC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Abstract", "FuelTracker.Core.Abstract\FuelTracker.Core.Abstract.csproj", "{6DE436EB-326C-4F0F-8703-5A48170B145B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Abstract", "Core\FuelTracker.Core.Abstract\FuelTracker.Core.Abstract.csproj", "{6DE436EB-326C-4F0F-8703-5A48170B145B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Entities", "FuelTracker.Core.Entities\FuelTracker.Core.Entities.csproj", "{70DC2F0D-C46E-4D67-B366-DE4EE1B2DF73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Core.Entities", "Core\FuelTracker.Core.Entities\FuelTracker.Core.Entities.csproj", "{70DC2F0D-C46E-4D67-B366-DE4EE1B2DF73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.InMemory", "FuelTracker.Storage.InMemory\FuelTracker.Storage.InMemory.csproj", "{769D2937-A243-4A66-9A02-A2F1F2A852F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.InMemory", "Storage\FuelTracker.Storage.InMemory\FuelTracker.Storage.InMemory.csproj", "{769D2937-A243-4A66-9A02-A2F1F2A852F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.InMemory.DI.Ninject", "FuelTracker.Storage.InMemory.DI.Ninject\FuelTracker.Storage.InMemory.DI.Ninject.csproj", "{1A1C9B0D-668B-4670-84F3-BB7CE0942B5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.InMemory.DI.Ninject", "Storage\FuelTracker.Storage.InMemory.DI.Ninject\FuelTracker.Storage.InMemory.DI.Ninject.csproj", "{1A1C9B0D-668B-4670-84F3-BB7CE0942B5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.Core.DI.Ninject", "FuelTracker.Storage.Core.DI.Ninject\FuelTracker.Storage.Core.DI.Ninject.csproj", "{F8171E99-9BCC-4624-ABF9-50F138D56812}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Storage.Core.DI.Ninject", "Storage\FuelTracker.Storage.Core.DI.Ninject\FuelTracker.Storage.Core.DI.Ninject.csproj", "{F8171E99-9BCC-4624-ABF9-50F138D56812}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Storage", "Storage", "{B0D96A56-3D22-47F6-8FDD-644477E84EA7}"
 EndProject

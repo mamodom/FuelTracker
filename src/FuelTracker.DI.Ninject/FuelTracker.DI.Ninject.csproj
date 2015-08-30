@@ -53,15 +53,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FuelTracker.Core.Commands\FuelTracker.Core.Commands.csproj">
+    <ProjectReference Include="..\Core\FuelTracker.Core.Commands\FuelTracker.Core.Commands.csproj">
       <Project>{101016BF-F910-4EAD-B009-420C55864FE3}</Project>
       <Name>FuelTracker.Core.Commands</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FuelTracker.Core.Concrete\FuelTracker.Core.Concrete.csproj">
+    <ProjectReference Include="..\Core\FuelTracker.Core.Concrete\FuelTracker.Core.Concrete.csproj">
       <Project>{29757A21-ACF3-4C4A-9989-99B4FEAB831A}</Project>
       <Name>FuelTracker.Core.Concrete</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FuelTracker.Core.Entities\FuelTracker.Core.Entities.csproj">
+    <ProjectReference Include="..\Core\FuelTracker.Core.Entities\FuelTracker.Core.Entities.csproj">
       <Project>{70DC2F0D-C46E-4D67-B366-DE4EE1B2DF73}</Project>
       <Name>FuelTracker.Core.Entities</Name>
     </ProjectReference>
@@ -69,11 +69,11 @@
       <Project>{289BF93E-D590-47EA-8C17-0E33CB242F0C}</Project>
       <Name>FuelTracker.Libs</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FuelTracker.Storage.Core\FuelTracker.Storage.Core.csproj">
+    <ProjectReference Include="..\Storage\FuelTracker.Storage.Core\FuelTracker.Storage.Core.csproj">
       <Project>{F3C46F0A-9BD4-4C43-B6F7-707BBAFC4DC5}</Project>
       <Name>FuelTracker.Storage.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FuelTracker.Storage.InMemory.DI.Ninject\FuelTracker.Storage.InMemory.DI.Ninject.csproj">
+    <ProjectReference Include="..\Storage\FuelTracker.Storage.InMemory.DI.Ninject\FuelTracker.Storage.InMemory.DI.Ninject.csproj">
       <Project>{1A1C9B0D-668B-4670-84F3-BB7CE0942B5B}</Project>
       <Name>FuelTracker.Storage.InMemory.DI.Ninject</Name>
     </ProjectReference>

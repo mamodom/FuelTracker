@@ -105,6 +105,67 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("List fillups with two fillups")]
+        public virtual void ListFillupsWithTwoFillups()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("List fillups with two fillups", ((string[])(null)));
+#line 17
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Field",
+                        "Value"});
+            table3.AddRow(new string[] {
+                        "OdometerReading",
+                        "1000"});
+            table3.AddRow(new string[] {
+                        "Gallons",
+                        "20"});
+            table3.AddRow(new string[] {
+                        "TotalCost",
+                        "4000"});
+#line 18
+ testRunner.Given("I added the following fillup", ((string)(null)), table3, "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Field",
+                        "Value"});
+            table4.AddRow(new string[] {
+                        "OdometerReading",
+                        "1100"});
+            table4.AddRow(new string[] {
+                        "Gallons",
+                        "10"});
+            table4.AddRow(new string[] {
+                        "TotalCost",
+                        "2000"});
+#line 23
+ testRunner.Given("I added the following fillup", ((string)(null)), table4, "Given ");
+#line 28
+ testRunner.When("I list my fillups", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                        "OdometerReading",
+                        "Gallons",
+                        "TotalCost",
+                        "PricePerGallon"});
+            table5.AddRow(new string[] {
+                        "1000",
+                        "20",
+                        "4000",
+                        "200"});
+            table5.AddRow(new string[] {
+                        "1100",
+                        "10",
+                        "2000",
+                        "200"});
+#line 29
+ testRunner.Then("I should see the following fillups", ((string)(null)), table5, "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

@@ -18,13 +18,11 @@ namespace FuelTracker.Specs.Steps
         }
 
         [Given(@"I added the following fillup")]
-        public void GivenIAddedTheFollowingFillup(Table table)
-        {
-            table.CreateInstance<AddFillUpCommand>()
-                .Then(_resolver.GetInstance<ICommandHandler<AddFillUpCommand>>().Handle);
-
-            var instance = _resolver.GetInstance<ICommandHandler<AddFillUpCommand>>();
-        }
+        public void GivenIAddedTheFollowingFillup(Table table) => table
+            .CreateInstance<AddFillUpCommand>()
+            .Then(_resolver
+                .Get<ICommandHandler<AddFillUpCommand>>()
+                .Handle);
 
         [When(@"I list my fillups")]
         public void WhenIListMyFillups()

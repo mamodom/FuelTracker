@@ -11,7 +11,7 @@ namespace FuelTracker.DI.Ninject
             _standardKernel = standardKernel;
         }
 
-        public T GetInstance<T>()
+        public T Get<T>()
         {
             return _standardKernel.Get<T>();
         }

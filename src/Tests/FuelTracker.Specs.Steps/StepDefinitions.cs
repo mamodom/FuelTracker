@@ -1,4 +1,5 @@
-﻿using FuelTracker.Core.Commands;
+﻿using System.Collections.Generic;
+using FuelTracker.Core.Commands;
 using FuelTracker.DI.Ninject;
 using FuelTracker.Libs;
 using FuelTracker.Libs.Extensions;
@@ -11,6 +12,7 @@ namespace FuelTracker.Specs.Steps
     public class StepDefinitions
     {
         private readonly IResolver _resolver;
+        private IEnumerable<FillUpPresenter> _fillUps;
 
         public StepDefinitions(IResolver resolver)
         {
@@ -27,7 +29,8 @@ namespace FuelTracker.Specs.Steps
         [When(@"I list my fillups")]
         public void WhenIListMyFillups()
         {
-            ScenarioContext.Current.Pending();
+            _fillUps = _resolver.Get<IQueryHandler<ListFillUpQuery, IEnumerable<FillUpPresenter>>>()
+                .Handle(new ListFillUpQuery());
         }
 
         [Then(@"I should see the following fillups")]
@@ -35,5 +38,18 @@ namespace FuelTracker.Specs.Steps
         {
             ScenarioContext.Current.Pending();
         }
+    }
+
+    public interface IQueryHandler<in TQuery, out TResponse>
+    {
+        TResponse Handle(TQuery query);
+    }
+
+    public class ListFillUpQuery
+    {
+    }
+
+    internal class FillUpPresenter
+    {
     }
 }

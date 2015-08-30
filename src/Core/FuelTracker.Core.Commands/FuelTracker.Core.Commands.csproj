@@ -39,6 +39,12 @@
     <Compile Include="ListFillUpQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FuelTracker.Core.Entities\FuelTracker.Core.Entities.csproj">
+      <Project>{70DC2F0D-C46E-4D67-B366-DE4EE1B2DF73}</Project>
+      <Name>FuelTracker.Core.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -27,16 +27,11 @@ namespace FuelTracker.Specs.Steps
                 .Handle);
 
         [When(@"I list my fillups")]
-        public void WhenIListMyFillups()
-        {
-            _fillUps = _resolver.Get<IQueryHandler<ListFillUpQuery, IEnumerable<FillUpPresenter>>>()
+        public void WhenIListMyFillups() => _fillUps =
+            _resolver.Get<IQueryHandler<ListFillUpQuery, IEnumerable<FillUpPresenter>>>()
                 .Handle(new ListFillUpQuery());
-        }
 
         [Then(@"I should see the following fillups")]
-        public void ThenIShouldSeeTheFollowingFillups(Table table)
-        {
-            ScenarioContext.Current.Pending();
-        }
+        public void ThenIShouldSeeTheFollowingFillups(Table table) => table.CompareToSet(_fillUps);
     }
 }

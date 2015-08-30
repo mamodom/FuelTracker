@@ -35,7 +35,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factories\FillUpFactory.cs" />
+    <Compile Include="Factories\FillUpPresenterFactory.cs" />
     <Compile Include="Handlers\AddFillUpCommandHandler.cs" />
+    <Compile Include="Handlers\ListFillUpQueryHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

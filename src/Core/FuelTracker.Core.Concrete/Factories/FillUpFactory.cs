@@ -8,7 +8,13 @@ namespace FuelTracker.Core.Concrete.Factories
     {
         public FillUp Create(AddFillUpCommand command)
         {
-            return new FillUp();
+            return new FillUp
+            {
+                OdometerReading = command.OdometerReading,
+                TotalCost = command.TotalCost,
+                Gallons = command.Gallons,
+                PricePerGallon = command.TotalCost/command.Gallons
+            };
         }
     }
 }

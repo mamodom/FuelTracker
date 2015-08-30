@@ -6,7 +6,7 @@ namespace FuelTracker.Storage.Core.DI.Ninject
     {
         public override void Load()
         {
-            Bind(typeof(IRepository<>)).To(typeof(Repository<>));
+            Bind(typeof(IRepository<>)).To(typeof(Repository<>)).InSingletonScope();
         }
     }
 }

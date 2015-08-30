@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.3.2.3-unstable-012\lib\net45-full\Ninject.dll</HintPath>
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -42,9 +42,6 @@
     <Compile Include="NinjectResolverAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResolverFactory.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\FuelTracker.Core.Abstract\FuelTracker.Core.Abstract.csproj">
@@ -71,6 +68,9 @@
       <Project>{1A1C9B0D-668B-4670-84F3-BB7CE0942B5B}</Project>
       <Name>FuelTracker.Storage.InMemory.DI.Ninject</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

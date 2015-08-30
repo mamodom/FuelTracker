@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -40,9 +40,6 @@
   <ItemGroup>
     <Compile Include="InMemoryStorageModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FuelTracker.Storage.Core.DI.Ninject\FuelTracker.Storage.Core.DI.Ninject.csproj">
@@ -57,6 +54,9 @@
       <Project>{769D2937-A243-4A66-9A02-A2F1F2A852F3}</Project>
       <Name>FuelTracker.Storage.InMemory</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

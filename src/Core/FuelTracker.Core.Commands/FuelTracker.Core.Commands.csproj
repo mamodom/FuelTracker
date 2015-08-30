@@ -35,6 +35,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddFillUpCommand.cs" />
+    <Compile Include="FillUpPresenter.cs" />
+    <Compile Include="ListFillUpQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

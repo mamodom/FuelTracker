@@ -39,17 +39,4 @@ namespace FuelTracker.Specs.Steps
             ScenarioContext.Current.Pending();
         }
     }
-
-    public interface IQueryHandler<in TQuery, out TResponse>
-    {
-        TResponse Handle(TQuery query);
-    }
-
-    public class ListFillUpQuery
-    {
-    }
-
-    internal class FillUpPresenter
-    {
-    }
 }

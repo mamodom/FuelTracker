@@ -37,6 +37,7 @@
     <Compile Include="Extensions\GenericExtensions.cs" />
     <Compile Include="ICommandHandler.cs" />
     <Compile Include="IFactory.cs" />
+    <Compile Include="IQueryHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

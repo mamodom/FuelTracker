@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CC657223-D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{767F2146-A9B0-48C0-B6F9-73F8F4EE8509}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelTracker.Web.Api", "Web\FuelTracker.Web.Api\FuelTracker.Web.Api.csproj", "{066E63A6-BAC2-4917-8A97-757643A582EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{F8171E99-9BCC-4624-ABF9-50F138D56812}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8171E99-9BCC-4624-ABF9-50F138D56812}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8171E99-9BCC-4624-ABF9-50F138D56812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066E63A6-BAC2-4917-8A97-757643A582EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066E63A6-BAC2-4917-8A97-757643A582EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066E63A6-BAC2-4917-8A97-757643A582EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066E63A6-BAC2-4917-8A97-757643A582EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

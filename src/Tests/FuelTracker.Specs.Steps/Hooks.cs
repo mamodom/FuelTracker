@@ -1,6 +1,6 @@
 ﻿using BoDi;
 using FuelTracker.DI.Ninject;
-using FuelTracker.Libs;
+using FuelTracker.Libs.Extensions;
 using TechTalk.SpecFlow;
 
 namespace FuelTracker.Specs.Steps
@@ -19,7 +19,7 @@ namespace FuelTracker.Specs.Steps
         [BeforeScenario]
         public void RegisterResolver() => ResolverFactory
             .Create()
-            .Pipe(resolver => _objectContainer
+            .Then(resolver => _objectContainer
                 .RegisterInstanceAs(resolver));
     }
 }

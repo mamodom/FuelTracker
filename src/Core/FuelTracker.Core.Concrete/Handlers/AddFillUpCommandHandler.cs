@@ -1,10 +1,11 @@
-using FuelTracker.Core.Abstract;
+using FuelTracker.Core.Abstract.Factories;
 using FuelTracker.Core.Commands;
 using FuelTracker.Core.Entities;
 using FuelTracker.Libs;
+using FuelTracker.Libs.Extensions;
 using FuelTracker.Storage.Core;
 
-namespace FuelTracker.Core.Concrete
+namespace FuelTracker.Core.Concrete.Handlers
 {
     public class AddFillUpCommandHandler : ICommandHandler<AddFillUpCommand>
     {
@@ -20,7 +21,7 @@ namespace FuelTracker.Core.Concrete
         public void Handle(AddFillUpCommand command)
         {
             _fillUpFactory.Create(command)
-                .Pipe(_fillUps.Add);
+                .Then(_fillUps.Add);
         }
     }
 }

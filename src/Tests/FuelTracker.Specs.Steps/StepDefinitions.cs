@@ -1,6 +1,7 @@
 ﻿using FuelTracker.Core.Commands;
 using FuelTracker.DI.Ninject;
 using FuelTracker.Libs;
+using FuelTracker.Libs.Extensions;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 
@@ -20,7 +21,7 @@ namespace FuelTracker.Specs.Steps
         public void GivenIAddedTheFollowingFillup(Table table)
         {
             table.CreateInstance<AddFillUpCommand>()
-                .Pipe(_resolver.GetInstance<ICommandHandler<AddFillUpCommand>>().Handle);
+                .Then(_resolver.GetInstance<ICommandHandler<AddFillUpCommand>>().Handle);
 
             var instance = _resolver.GetInstance<ICommandHandler<AddFillUpCommand>>();
         }

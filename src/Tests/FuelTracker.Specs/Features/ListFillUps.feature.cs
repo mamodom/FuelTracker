@@ -32,8 +32,8 @@ namespace FuelTracker.Specs.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "List Fillups", "In order to keep track of my vehicle\'s consumption\nAs a car owner\nI want to be ab" +
-                    "le to list my fillups", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "List Fillups", "In order to keep track of my vehicle\'s consumption\r\nAs a car owner\r\nI want to be " +
+                    "able to list my fillups", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         

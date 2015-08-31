@@ -61,6 +61,10 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FuelTracker.Specs.Steps.WebApi\FuelTracker.Specs.Steps.WebApi.csproj">
+      <Project>{e00107f2-fb1e-497e-af98-a457cbcc08cc}</Project>
+      <Name>FuelTracker.Specs.Steps.WebApi</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FuelTracker.Specs.Steps\FuelTracker.Specs.Steps.csproj">
       <Project>{e5ced08b-c0fb-4656-8421-40f37fc1301e}</Project>
       <Name>FuelTracker.Specs.Steps</Name>

@@ -6,7 +6,6 @@ namespace FuelTracker.Web.Api
 {
     public class Global : HttpApplication
     {
-
         protected void Application_Start(object sender, EventArgs e)
         {
             GlobalConfiguration.Configure(RouteConfig.Register);

@@ -4,9 +4,9 @@ namespace FuelTracker.DI.Ninject
 {
     public class NinjectResolverAdapter : IResolver
     {
-        private readonly StandardKernel _standardKernel;
+        private readonly IKernel _standardKernel;
 
-        public NinjectResolverAdapter(StandardKernel standardKernel)
+        public NinjectResolverAdapter(IKernel standardKernel)
         {
             _standardKernel = standardKernel;
         }

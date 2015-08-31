@@ -9,12 +9,20 @@ using Ninject;
 
 namespace FuelTracker.DI.Ninject
 {
-    public class ResolverFactory
+    public static class ResolverFactory
     {
         public static IResolver Create()
         {
             var kernel = new StandardKernel();
 
+            RegisterServices(kernel);
+            
+
+            return new NinjectResolverAdapter(kernel);
+        }
+
+        public static void RegisterServices(IKernel kernel)
+        {
             kernel.Bind<ICommandHandler<AddFillUpCommand>>().To<AddFillUpCommandHandler>();
             kernel.Bind<IQueryHandler<ListFillUpQuery, IEnumerable<FillUpPresenter>>>().To<ListFillUpQueryHandler>();
 
@@ -22,8 +30,6 @@ namespace FuelTracker.DI.Ninject
             kernel.Bind<IFillUpPresenterFactory>().To<FillUpPresenterFactory>();
 
             kernel.Load<InMemoryStorageModule>();
-
-            return new NinjectResolverAdapter(kernel);
         }
     }
 }

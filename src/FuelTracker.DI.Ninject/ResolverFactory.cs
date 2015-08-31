@@ -4,6 +4,7 @@ using FuelTracker.Core.Commands;
 using FuelTracker.Core.Concrete.Factories;
 using FuelTracker.Core.Concrete.Handlers;
 using FuelTracker.Libs;
+using FuelTracker.Libs.Extensions;
 using FuelTracker.Storage.InMemory.DI.Ninject;
 using Ninject;
 
@@ -11,15 +12,10 @@ namespace FuelTracker.DI.Ninject
 {
     public static class ResolverFactory
     {
-        public static IResolver Create()
-        {
-            var kernel = new StandardKernel();
-
-            RegisterServices(kernel);
-            
-
-            return new NinjectResolverAdapter(kernel);
-        }
+        public static IResolver Create() =>
+            new StandardKernel()
+                .Tap(RegisterServices)
+                .Then(kernel => new NinjectResolverAdapter(kernel));
 
         public static void RegisterServices(IKernel kernel)
         {

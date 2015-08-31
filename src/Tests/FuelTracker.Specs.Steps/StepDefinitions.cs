@@ -22,7 +22,7 @@ namespace FuelTracker.Specs.Steps
         [Given(@"I added the following fillup")]
         public void GivenIAddedTheFollowingFillup(Table table) => table
             .CreateInstance<AddFillUpCommand>()
-            .Then(_resolver
+            .Finally(_resolver
                 .Get<ICommandHandler<AddFillUpCommand>>()
                 .Handle);
 

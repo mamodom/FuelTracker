@@ -19,7 +19,7 @@ namespace FuelTracker.Specs.Steps
         [BeforeScenario]
         public void RegisterResolver() => ResolverFactory
             .Create()
-            .Then(resolver => _objectContainer
+            .Finally(resolver => _objectContainer
                 .RegisterInstanceAs(resolver));
     }
 }

@@ -18,10 +18,8 @@ namespace FuelTracker.Core.Concrete.Handlers
             _fillUpFactory = fillUpFactory;
         }
 
-        public void Handle(AddFillUpCommand command)
-        {
+        public void Handle(AddFillUpCommand command) =>
             _fillUpFactory.Create(command)
-                .Then(_fillUps.Add);
-        }
+                .Finally(_fillUps.Add);
     }
 }
